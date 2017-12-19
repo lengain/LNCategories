@@ -40,7 +40,8 @@
 		3301F75A1FE8129300AEB63E /* UIView+LNOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7541FE8129300AEB63E /* UIView+LNOperation.m */; };
 		3301F75B1FE8129300AEB63E /* UIView+LNToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7551FE8129300AEB63E /* UIView+LNToast.m */; };
 		3301F75E1FE812BD00AEB63E /* UITextView+LNPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F75D1FE812BD00AEB63E /* UITextView+LNPlaceholder.m */; };
-		3301F7621FE8131F00AEB63E /* UIViewController+LNLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7601FE8131E00AEB63E /* UIViewController+LNLifeCycle.m */; };
+		3301F7661FE961B400AEB63E /* UIViewController+LNLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7641FE961B400AEB63E /* UIViewController+LNLifeCycle.m */; };
+		3301F7681FE9624700AEB63E /* LNCategories.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3301F7671FE9624700AEB63E /* LNCategories.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,8 +128,9 @@
 		3301F7571FE8129300AEB63E /* UIView+LNScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LNScreenShot.h"; sourceTree = "<group>"; };
 		3301F75C1FE812BD00AEB63E /* UITextView+LNPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+LNPlaceholder.h"; sourceTree = "<group>"; };
 		3301F75D1FE812BD00AEB63E /* UITextView+LNPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+LNPlaceholder.m"; sourceTree = "<group>"; };
-		3301F7601FE8131E00AEB63E /* UIViewController+LNLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LNLifeCycle.m"; sourceTree = "<group>"; };
-		3301F7611FE8131E00AEB63E /* UIViewController+LNLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LNLifeCycle.h"; sourceTree = "<group>"; };
+		3301F7641FE961B400AEB63E /* UIViewController+LNLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LNLifeCycle.m"; sourceTree = "<group>"; };
+		3301F7651FE961B400AEB63E /* UIViewController+LNLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LNLifeCycle.h"; sourceTree = "<group>"; };
+		3301F7671FE9624700AEB63E /* LNCategories.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.sh; fileEncoding = 4; path = LNCategories.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		3301F67C1FE804F400AEB63E /* LNCategories-master */ = {
 			isa = PBXGroup;
 			children = (
+				3301F7671FE9624700AEB63E /* LNCategories.podspec */,
 				3301F6B51FE8064500AEB63E /* LNCategories */,
 				3301F67D1FE804F400AEB63E /* AppDelegate.h */,
 				3301F67E1FE804F400AEB63E /* AppDelegate.m */,
@@ -214,6 +217,7 @@
 		3301F6B51FE8064500AEB63E /* LNCategories */ = {
 			isa = PBXGroup;
 			children = (
+				3301F7631FE961B400AEB63E /* LifeCycle */,
 				3301F6B61FE8071900AEB63E /* Foundation */,
 				3301F6D81FE8071900AEB63E /* UIKit */,
 			);
@@ -312,7 +316,6 @@
 		3301F6D81FE8071900AEB63E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3301F75F1FE8131E00AEB63E /* UIViewController */,
 				3301F6D91FE8071900AEB63E /* UIImage */,
 				3301F6E01FE8071900AEB63E /* UILabel */,
 				3301F6E31FE8071900AEB63E /* UIButton */,
@@ -389,13 +392,13 @@
 			path = UITextView;
 			sourceTree = "<group>";
 		};
-		3301F75F1FE8131E00AEB63E /* UIViewController */ = {
+		3301F7631FE961B400AEB63E /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
-				3301F7601FE8131E00AEB63E /* UIViewController+LNLifeCycle.m */,
-				3301F7611FE8131E00AEB63E /* UIViewController+LNLifeCycle.h */,
+				3301F7641FE961B400AEB63E /* UIViewController+LNLifeCycle.m */,
+				3301F7651FE961B400AEB63E /* UIViewController+LNLifeCycle.h */,
 			);
-			path = UIViewController;
+			path = LifeCycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3301F7681FE9624700AEB63E /* LNCategories.podspec in Resources */,
 				3301F68A1FE804F400AEB63E /* LaunchScreen.storyboard in Resources */,
 				3301F6871FE804F400AEB63E /* Assets.xcassets in Resources */,
 				3301F6851FE804F400AEB63E /* Main.storyboard in Resources */,
@@ -551,7 +555,7 @@
 				3301F7191FE809B700AEB63E /* NSData+LNMD5.m in Sources */,
 				3301F72E1FE8115800AEB63E /* NSString+LNMD5.m in Sources */,
 				3301F71F1FE80E1000AEB63E /* NSString+LNDate.m in Sources */,
-				3301F7621FE8131F00AEB63E /* UIViewController+LNLifeCycle.m in Sources */,
+				3301F7661FE961B400AEB63E /* UIViewController+LNLifeCycle.m in Sources */,
 				3301F7411FE811F500AEB63E /* UIImage+LNCompress.m in Sources */,
 				3301F67F1FE804F400AEB63E /* AppDelegate.m in Sources */,
 				3301F7301FE8115800AEB63E /* NSString+LNSafeAccess.m in Sources */,
