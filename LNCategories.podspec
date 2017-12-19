@@ -91,8 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LNCategories/Foundation/*.{h,m}"
-  s.source_files  = "LNCategories/UIKit/*.{h,m}"
+  s.source_files  = "LNCategories/LNCategories/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -136,6 +135,17 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
+  s.subspec 'UIKit' do |uk|
+    uk.ios.deployment_target = "7.0"
+    uk.source_files = "LNCategories/LNCategories/UIKit/**/*.{h,m}"
+    #    lc.dependency "SDWebImage/Core"
+  end
+
+  s.subspec 'Foundation' do |fd|
+    fd.ios.deployment_target = "7.0"
+    fd.source_files = "LNCategories/LNCategories/Foundation/**/*.{h,m}"
+    #    lc.dependency "SDWebImage/Core"
+  end
 
   s.subspec 'LifeCycle' do |lc|
     lc.ios.deployment_target = "7.0"
