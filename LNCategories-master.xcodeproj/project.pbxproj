@@ -42,6 +42,7 @@
 		3301F7C11FE9685D00AEB63E /* NSArray+LNSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7A31FE9685D00AEB63E /* NSArray+LNSafeAccess.m */; };
 		3301F7C21FE9685D00AEB63E /* NSUserDefaults+LNSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7A71FE9685D00AEB63E /* NSUserDefaults+LNSafeAccess.m */; };
 		3301F7C31FE9685D00AEB63E /* NSDate+LNComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301F7A91FE9685D00AEB63E /* NSDate+LNComponents.m */; };
+		33420E462004EDF500C1FBA9 /* UIViewController+LNQuickLook.m in Sources */ = {isa = PBXBuildFile; fileRef = 33420E452004EDF500C1FBA9 /* UIViewController+LNQuickLook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		3301F7A71FE9685D00AEB63E /* NSUserDefaults+LNSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+LNSafeAccess.m"; sourceTree = "<group>"; };
 		3301F7A91FE9685D00AEB63E /* NSDate+LNComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LNComponents.m"; sourceTree = "<group>"; };
 		3301F7AA1FE9685D00AEB63E /* NSDate+LNComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LNComponents.h"; sourceTree = "<group>"; };
+		33420E442004EDF500C1FBA9 /* UIViewController+LNQuickLook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LNQuickLook.h"; sourceTree = "<group>"; };
+		33420E452004EDF500C1FBA9 /* UIViewController+LNQuickLook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LNQuickLook.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,7 @@
 		3301F76A1FE9685C00AEB63E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				33420E432004EDCD00C1FBA9 /* UIViewController */,
 				3301F76B1FE9685C00AEB63E /* UIImage */,
 				3301F7721FE9685C00AEB63E /* UILabel */,
 				3301F7751FE9685C00AEB63E /* UIButton */,
@@ -409,6 +413,15 @@
 			path = NSDate;
 			sourceTree = "<group>";
 		};
+		33420E432004EDCD00C1FBA9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				33420E442004EDF500C1FBA9 /* UIViewController+LNQuickLook.h */,
+				33420E452004EDF500C1FBA9 /* UIViewController+LNQuickLook.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -560,6 +573,7 @@
 				3301F7BB1FE9685D00AEB63E /* NSString+LNDate.m in Sources */,
 				3301F7AF1FE9685D00AEB63E /* UIButton+LNBackgroundColor.m in Sources */,
 				3301F7B41FE9685D00AEB63E /* UIView+LNOperation.m in Sources */,
+				33420E462004EDF500C1FBA9 /* UIViewController+LNQuickLook.m in Sources */,
 				3301F7AE1FE9685D00AEB63E /* UILabel+LNQuickInit.m in Sources */,
 				3301F7C01FE9685D00AEB63E /* NSString+LNMD5.m in Sources */,
 				3301F7C21FE9685D00AEB63E /* NSUserDefaults+LNSafeAccess.m in Sources */,
